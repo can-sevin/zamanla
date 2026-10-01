@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Supabase sütunlarıyla birebir eşleşen JSON anahtarları (snake_case).
+          use_sql_column_name_as_json_key: true
+          # Milisaniye hassasiyeti ("son yazan kazanır" için) ve UTC farkı korunur.
+          store_date_time_values_as_text: true
